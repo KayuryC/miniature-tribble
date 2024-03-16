@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+//Contagem regressiva em C
+	  //Declarando variaveis
+		  int contagem;
+		  int i;
+		
+	 //Entrada do usuario
+			printf("Digite um valor (POSITIVO e INTEIRO) para a contagem regressiva: ");
+	 	scanf("%d", &contagem);
+
+		//Processo de repetição e condição
+		 	if(contagem <= 0){
+		 	    printf("ERRO! ERRO! ERRO! \nDigite um valor valido da proxima vez...");
+		 	return 1;
+			 }	
+				  printf("Contagem regressiva de %d ate 0.\n", contagem);
+			 	for(i = contagem; i >= 0; i--) {
+        	printf("%d\n", i);
+			}		 
+			
+
+	return 0;
+}
